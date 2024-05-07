@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import './App.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -25,9 +26,14 @@ function App() {
         <button onClick={() => getCharacterName(14)}>han solo</button>
         <button onClick={() => getCharacterName(13)}>chewbacca</button>
         <button onClick={() => getCharacterName(1)}>Luke</button>
+        <Link to="/test">
+          <button type="button">
+                Test
+          </button>
+        </Link>
       </div>
-
-      <p>Feito por: Thulio Bezerra, Júlio César, Arthur Ian</p>
+      
+      <p>Feito por: Samuel Marcos, Sávio Sayke e Deglier Fernandes</p>
     </div>
   )
 }
